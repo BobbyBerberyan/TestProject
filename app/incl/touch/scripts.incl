@@ -1,8 +1,0 @@
-<!-- scripts concatenated and minified via ant build script -->
-<script src="/js/mylibs/helper.js"></script>
-<!-- end concatenated and minified scripts-->
-
-<script>
-  // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
-  MBP.scaleFix();
-</script>
