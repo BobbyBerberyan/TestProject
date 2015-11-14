@@ -1,0 +1,42 @@
+
+<aside>
+  <ul id="globalAside" class="clearfix">
+    <li id="byt"><a href="/configurator/" class="omni" data-link-name="nav_footer_cta_build_your_toyota"><div><span>Build Your Toyota</span><div class="bg" id="bytLogo"></div></div></a></li>
+    <li id="tcuv"><a href="http://www.toyota.com/tcuv/" class="omni" data-link-name="nav_footer_cta_certified_used_vehicles"><div><span>Certified Used Vehicles</span><div class="bg" id="tcuvLogo"></div></div></a></li>
+    <li id="tfs"><a href="http://www.toyotafinancial.com/" class="omni" data-link-name="nav_footer_cta_toyota_financial_services"><div><span>Toyota Financial Services</span><div class="bg" id="tfsLogo"></div></div></a></li>
+	<li id="entune"><a href="/entune/" class="omni" data-link-name="nav_footer_cta_entune"><div><span>Entune</span><div class="bg" id="entLogo"></div></div></a></li>	
+
+  </ul>
+</aside>
+<footer>
+  <div id="disclaimerContain">
+    <div id="disclaimerTitle"><span id="arrowDisc">&#x25B6;</span> [#] View All Disclosures</div>
+    <ul id="disclaimerList">
+
+	<li>[1] - Available Spring 2012 at no charge on Display Audio with Navigation and Entune&trade;.</li>
+
+	<li>[5] - Be sure to obey traffic regulations and maintain awareness of road and traffic conditions. Select Entune&trade; apps use a large amount of data and you are responsible for all data charges. Apps and services vary by phone and carrier. Not all apps and data services are available initially. Apps identified by "&trade;" or "&reg;" are trademarks or registered trademarks of their respective companies and cannot be used without permission. See toyota.com/entune for the latest information regarding apps and services.</li>
+
+</ul>
+  </div>
+  <ul id="internalLinks">
+    <li><a href="/espanol/" class="omni" data-link-name="nav_footer_cta_espanol">Espa&ntilde;ol</a></li>
+    <li><a href="#" class="omni" data-link-name="nav_footer_cta_view_full_site">View Full Site</a></li>
+  </ul>
+  <ul id="socialLinks">
+    <li class="omni" data-href="http://www.facebook.com/toyota" data-linkTrackType="e" data-link-name="nav_footer_cta_facebook"><a class="bg" href="#"></a></li>
+    <li class="omni" data-href="http://www.twitter.com/toyota" data-linkTrackType="e" data-link-name="nav_footer_cta_twitter"><a class="bg" href="#"></a></li>
+    <li class="omni" data-href="http://www.youtube.com/toyotausa" data-linkTrackType="e" data-link-name="nav_footer_cta_youtube"><a class="bg"></a></li>
+  </ul>  
+  <ul id="coda">
+    <li><a href="receive-updates.html" class="omni" data-link-name="nav_footer_cta_receive_updates">Receive Updates</a></li>
+    <li><a href="/help/" class="omni" data-link-name="nav_footer_cta_help_&_support">Help &amp; Support</a></li>
+    <li><a href="/entune/" class="omni" data-link-name="nav_footer_cta_entune">Entune</a></li>
+    <li><a href="/help/legal.html" class="omni" data-link-name="nav_footer_cta_legal">Legal</a></li>
+	<li><a href="/help/privacy.html" class="omni" data-link-name="nav_footer_cta_privacy">Your Privacy Rights</a></li>
+  </ul>
+  <p id="copyrightCopy">&copy;2012 Toyota Motor Sales, U.S.A., Inc. All information applies to U.S. vehicles only.</p>
+</footer>
+
+<!--#include virtual="/incl/velti.incl" -->
+

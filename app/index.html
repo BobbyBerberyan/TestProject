@@ -1,0 +1,155 @@
+<!--#include virtual='/tcom1/common/incl/html.incl' -->
+<head>
+    <!-- PAGE-META -->
+    <title>Toyota Inventory | New Toyota Inventory Search</title>
+
+    <meta name="description" content="Check out our Toyota inventory. Finding a Toyota in stock near you has never been easier.">
+    <meta name="keywords" content="inventory, toyota inventory, find a toyota, new toyota inventory, toyota inventory">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimal-ui">
+
+    <!-- API Timing Params -->
+    <!--#include virtual="incl/sit/params.incl" -->
+
+    <!-- /PAGE-META -->
+    <link rel="canonical" href="http://www.toyota.com/search-inventory/">
+
+    <!-- Global CSS -->
+    <!--#include virtual="/tcom1/apps/global/incl/critical-css.incl" -->
+
+    <!-- R+ CSS -->
+    <link rel="stylesheet" href="/tcom-ui/base/css/tcom-ui.css">
+    <link rel="stylesheet" href="/tcom-ui/organisms/tcom-global-header/css/tcom-global-header.css">
+    <link rel="stylesheet" href="/tcom-ui/organisms/modal/css/modal.css">
+    <link rel="stylesheet" href="/tcom-ui/organisms/disclaimers/css/disclaimers.css">
+    <link rel="stylesheet" href="/tcom-ui/organisms/raq/css/raq.css">
+
+    <!-- RIT CSS -->
+    <!--#include virtual="incl/rit-dependencies/head.css.incl" -->
+
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="/search-inventory/css/rit-sit.css">
+
+    <!-- Global JS -->
+    <!--#include virtual='/tcom1/common/incl/critical-js.incl' -->
+    </head>
+
+    <body data-app-name="sit">
+
+    <header id="tcom-global-nav-header" class="tcom-global-nav-header tcom-global-nav-section">
+        <!--#include virtual="/content/tcom1/incl/global/nav.incl" -->
+    </header>
+
+    <div id="sit-wrapper" class="wrapper">
+
+        <div id="inventoryHeader" class="container">
+            <div class="page-header header">
+                <h1 class="medium">New Toyota Inventory Search</h1>
+                <span class="page-header-sub">Finding a Toyota in stock near you has never been easier.</span>
+            </div>
+            <div id="header-zip-code">
+            </div>
+        </div>
+
+        <!--#include virtual="incl/rit/landing.incl" -->
+        <!--#include virtual="incl/rit/results.incl" -->
+        <!--#include virtual="incl/rit/details.incl" -->
+        <div id="sit-errors" class="container"></div>
+
+        <div id="inventorySpacer"></div>
+
+    <!-- Footer -->
+    <!--#include virtual="/content/tcom1/incl/global/footer-nav.incl"-->
+
+    </div><!-- END WRAPPER  -->
+
+    <div class="load-layer masked"><div class="loadmask"><i class="load-icon"></i></div></div>
+
+    <script src="/vendor/requirejs/2.1.2/require.js"></script>
+    <script src="/tcom1/common/js/jquery.js"></script>
+    <script src="/tcom/js/tcom.js"></script>
+    <script src="/vendor/backbone/0.9.9/backbone.js"></script>
+
+    <script>
+        //  this is used for the new api
+        function efcAPIReady() {
+            var apiInitEnd = new Date().valueOf() - apiInit,
+                debuggerBox = document.getElementById('debuggerBox').innerHTML;
+
+            isAPIReady = true;
+
+            if (debuggerOn) {
+                    console.debug('EFC:Ready');
+                    console.timeEnd('API INIT');
+                    console.log('apiInitEnd: '+apiInitEnd);
+                    document.getElementById('debuggerBox').innerHTML = debuggerBox +'<br> API Init: '+apiInitEnd;
+            }
+        }
+        // this is used for the old api
+        function onThreedReady() {
+            var threedInitEnd = new Date().valueOf() - threedInit,
+                debuggerBox = document.getElementById('debuggerBox').innerHTML;
+
+            isThreedReady = true;
+
+            if (debuggerOn) {
+                    console.debug('Threed:Ready');
+                    console.timeEnd('THREED INIT');
+                    console.log('threedInitEnd: '+threedInitEnd);
+            }
+        }
+        // this is used for the old api
+        function feature_model_Ready() {
+            var apiInitEnd = new Date().valueOf() - apiInit,
+                debuggerBox = document.getElementById('debuggerBox').innerHTML;
+
+            isAPIReady = true;
+
+            if (debuggerOn) {
+                console.debug('EFC:Ready');
+                console.timeEnd('API INIT');
+                console.log('apiInitEnd: '+apiInitEnd);
+                document.getElementById('debuggerBox').innerHTML = debuggerBox +'<br> API Init: '+apiInitEnd;
+            }
+        }
+        // if the new api throws an error this will be triggered
+        function efcAPIError() {
+            if (debuggerOn) console.log('efc api triggered an error.');
+
+            isAPIError = true;
+            if (window.jQuery){
+                $(window).trigger('SIT:api:fail');
+            }
+        }
+    </script>
+
+    <script type="text/javascript" language="javascript" src="/smartClient/api/api.nocache.js"></script>
+
+    <div id="tcom-disclaimers">
+        <ul class="tcom-disclaimers-list">
+            <!--#include virtual="/content/tcom1/incl/global/responsive/global-disclaimers.incl"-->
+            <li data-code="msrp_total">
+                <!--#include virtual="/content/disclaimer/msrp-dph.incl"-->
+            </li>
+        </ul>
+    </div>
+
+    <!-- R+ Disclaimers -->
+    <script src="/tcom-ui/organisms/modal/js/modal.js"></script>
+    <script src="/tcom-ui/organisms/disclaimers/js/disclaimers.js"></script>
+
+    <!-- Benchmark Box -->
+    <div id="debuggerBox"></div>
+
+    <!-- API -->
+    <!--#include virtual="incl/sit/api-ready.incl" -->
+    <script src="/search-inventory-ws/config/services/public/ConfiguratorClient/efcmain.js"></script>
+    <script src="/search-inventory-ws/config/services/public/ConfiguratorClient/solr/SolrInventorySearchController.js"></script>
+    <script src="/search-inventory-ws/config/services/public/ConfiguratorClient/solr/SolrSolverController.js"></script>
+    <script src="/search-inventory-ws/config/services/public/ConfiguratorClient/inventory/InventoryVehicle.js"></script>
+    <script src="/search-inventory-ws/config/services/public/ConfiguratorClient/inventory/PageUI.js"></script>
+    <script src="/search-inventory-ws/config/services/public/ConfiguratorClient/client_solver/client_solver.nocache.js"></script>
+    <script src="/search-inventory-ws/config/services/public/ConfiguratorClient/image_model/c3i.nocache.js"></script>
+
+    <!-- APP JS -->
+    <script src="/search-inventory/js/main.js"></script>
+</body>

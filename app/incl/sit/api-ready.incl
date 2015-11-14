@@ -1,0 +1,76 @@
+<script>
+window.isEFCAPIReady = false;
+window.isEFCThreedAPIReady = false;
+window.isEFCAPIError = false;
+
+var jqInit = function() {
+
+	var $ = window.jQuery;
+
+	clearInterval(jqInit);
+
+	require.config({
+		paths: {
+			'solvercontroller':'/search-inventory-ws/config/services/public/ConfiguratorClient/SolverController',
+			'apicontroller':'/search-inventory-ws/config/services/public/ConfiguratorClient/InventorySearchController',
+			'threedcontroller':'/search-inventory-ws/config/services/public/ConfiguratorClient/EFCThreedConfigurator'
+		},
+		shim: {
+			'solvercontroller':{
+				'exports':'SolverController'
+			},
+			'apicontroller':{
+				'deps': ['solvercontroller'],
+				'exports':'ConfigController'
+			},
+			'threedcontroller':{
+				'deps': ['solvercontroller'],
+				'exports':'ThreedController'
+			}
+
+		}
+	});
+	require([
+		'solvercontroller',
+		'apicontroller',
+		'threedcontroller'
+	],	function(
+		SolverController,
+		ConfigController,
+		ThreedController
+	) {
+	    if (!console) console = {log: function() {}};
+
+		$(document).bind('efc.api.ready', efcAPIReady);
+		var init = 0;
+		init = setInterval(function() {
+			//console.log("isEFCAPIReady: "+window.isEFCAPIReady+" isEFCThreedAPIReady: "+window.isEFCThreedAPIReady)
+			if (window.isEFCAPIReady === true && window.isEFCThreedAPIReady === true) {
+				clearInterval(init);
+				$(document).trigger('efc.api.ready');
+			}
+		}, 20);
+	}, function(error){
+		if (window.isEFCAPIError === false) {
+			window.isEFCAPIReady = false;
+			window.isEFCThreedAPIReady = false;
+			window.isEFCAPIError = true;
+			window.efcAPIError();
+		}
+	});
+
+};
+
+function client_solver_Ready(){
+	//console.log("clinet solver loaded")
+	window.isEFCAPIReady = true;
+}
+function onThreedReady(){
+	//console.log("Threed loaded")
+	window.isEFCThreedAPIReady = true;
+}
+
+jqInit();
+
+
+</script>

@@ -1,0 +1,51 @@
+<div id="globalMenu" class="allVehiclesContainer clearfix collapse_expand">
+      <div class="sectionTitle" data-firetag="38.32" data-category-name="All Vehicles">
+        <h2>All Vehicles
+          <div class="arrowClosed"></div>
+        </h2>
+      </div>
+      <div class="allVehiclesCategory">
+        <div id="categoryList">
+          <div id="slideCategory">
+            <ul class="categoryList">
+              <li class="category"><a data-firetag="38.33" href="/all-vehicles/cars-minivans.html">Cars & Minivans</a></li>
+              <li class="category"><a data-firetag="38.33" href="/all-vehicles/trucks.html">Trucks</a></li>
+              <li class="category"><a data-firetag="38.33" href="/all-vehicles/crossovers-suvs.html">Crossovers & SUVs</a></li>
+              <li class="category"><a data-firetag="38.33" href="/all-vehicles/hybrids-evs.html">Hybrids & EVs</a></li>
+              <li class="category"><a data-firetag="38.33" href="/all-vehicles/upcoming-vehicles.html">Upcoming Vehicles</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footerLinks">
+        <aside>
+        	<span class="heading">Shopping Tools</span>
+        	<ul id="primaryAside" class="clearfix">
+              <li id="rq" data-foot-href="/toyotaSite/touch/raqView.do" data-firetag="38.29" data-shopping-tool="Request a Quote"> <a href="javascript:void(0);">
+                <div data-foot-href="/toyotaSite/touch/raqView.do" data-firetag="38.29" data-shopping-tool="Request a Quote"><span>Request a Quote</span></div>
+                </a> </li>
+              <li id="glb_fad" data-foot-href="/dealers/" data-firetag="38.29" data-shopping-tool="Find a Dealer"> <a href="javascript:void(0);">
+                <div data-foot-href="/dealers/" data-firetag="38.29" data-shopping-tool="Find a Dealer"><span>Find a Dealer</span></div>
+                </a> </li>
+              <li id="si" data-foot-href="/new_path/" data-firetag="38.29" data-shopping-tool="Search Inventory"> <a href="javascript:void(0);">
+                <div data-foot-href="/new_path/" data-firetag="38.29" data-shopping-tool="Search Inventory"><span>Search Inventory</span></div>
+                </a> </li>
+              <li id="byt" data-foot-href="/configurator/#locationfilter" data-firetag="38.29" data-shopping-tool="Build Your Toyota"> <a href="javascript:void(0);">
+                <div data-foot-href="/configurator/#locationfilter" data-firetag="38.29" data-shopping-tool="Build Your Toyota"><span>Build Your Toyota</span></div>
+                </a> </li>
+              <li id="vls" data-foot-href="/localspecials/" data-firetag="38.29" data-shopping-tool="View Local Specials"> <a href="javascript:void(0);">
+                <div data-foot-href="/localspecials/" data-firetag="38.29" data-shopping-tool="View Local Specials"><span>View All Local Specials</span></div>
+                </a> </li>
+              <li id="glb_tcuv" data-href="http://touch.toyota.com/tcuv/" data-firetag="38.29" data-shopping-tool="TCUV"> <a href="javascript:void(0);">
+                <div data-href="http://touch.toyota.com/tcuv/" data-firetag="38.29" data-shopping-tool="TCUV"><span>Toyota Certified Used Vehicles</span></div>
+                </a> </li>
+              <li id="glb_tfs" data-href="http://www.toyotafinancial.com/" data-firetag="38.29" data-shopping-tool="Toyota Financial Services"> <a href="javascript:void(0);">
+                <div data-href="http://www.toyotafinancial.com/" data-firetag="38.29" data-shopping-tool="Toyota Financial Services"><span>Toyota Financial Services</span></div>
+                </a> </li>
+            </ul>
+        </aside>
+      </div>
+      <div id="closeGlobalMenu">
+      		<a class="close" href="#">&nbsp;</a>
+      </div>
+  </div>

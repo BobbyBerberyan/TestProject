@@ -1,0 +1,9 @@
+<!--#include virtual="global.css.incl"-->
+<!--[if gte IE 9]><!-->
+<link rel="stylesheet" href="/tcom1/apps/global/css/legacy.css" />
+<!--<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="/tcom1/apps/global/css/legacy-oldie.css" type="text/css" />
+<link rel="stylesheet" href="/tcom1/apps/global/css/main-oldie.css" type="text/css" />
+<link rel="stylesheet" href="/tcom1/apps/raq/css/main-oldie.css" type="text/css" />
+<![endif]-->

@@ -1,0 +1,181 @@
+<div class='yt-wrapper'>
+	<div id='player'></div>
+</div>
+
+<img data-firetag='27.21' data-device-type='Touch' data-current-pagename='TMob:Touch:MDL:Home' data-video-title='Big Game starring Muppets | 2014 Toyota Highlander' class='superbowl-banner base-banner' src='/img/events/superbowl/MLP_BT_480x103.jpg' />
+<img data-firetag='27.21' data-device-type='Touch' data-current-pagename='TMob:Touch:MDL:Home' data-video-title='Big Game starring Muppets | 2014 Toyota Highlander' class='superbowl-banner retina-banner' src='/img/events/superbowl/MLP_BT_960x206.jpg' />
+<img data-firetag='27.21' data-device-type='Tablet' data-current-pagename='TMob:Tablet:MDL:Home' data-video-title='Big Game starring Muppets | 2014 Toyota Highlander' class='superbowl-banner tablet-banner' src='/img/events/superbowl/MLP_BT_1024x150.jpg' />
+
+
+<style>
+.yt-wrapper {
+	position: relative;
+	padding-bottom: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.yt-wrapper.active {
+	padding-bottom:56.25%;
+}
+
+.vehicleIndex #vehicleHeader h1 span {
+	display: inline;
+	font-size: 25px;
+}
+
+#player {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.vehicleIndex #vehicleHeader {
+	border-bottom: 0 solid #DBDDDE;
+	margin-bottom: 0;
+	padding: 10px 0 0;
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: auto;
+	background: #740608;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #740608), color-stop(100%, #d21821), color-stop(100%, #a61419));
+	background: -webkit-linear-gradient(top, #740608 0, #d21821 96%, #a61419 100%);
+	background: -moz-linear-gradient(top, #740608 0, #d21821 96%, #a61419 100%);
+	background: -o-linear-gradient(top, #740608 0, #d21821 96%, #a61419 100%);
+	background: linear-gradient(top, #740608 0, #d21821 96%, #a61419 100%);
+}
+
+.vehicleIndex #vehicleHeader h1 {
+	margin:0;
+}
+
+.vehicleIndex .trimInfo {
+	top: 20px;
+}
+
+#heroContainContainer {
+	position:relative;
+}
+
+.tablet-banner,.retina-banner {
+	display:none;
+}
+
+@media only screen and and (max-width:1023px) and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min-moz-device-pixel-ratio: 1.5),
+	only screen and (min-device-pixel-ratio: 1.5) {
+		.base-banner, .tablet-banner {
+			display:none;
+		}
+
+		.retina-banner {
+			display:block;
+		}
+}
+
+@media only screen and (min-width:1024px) {
+	.base-banner {display:none;}
+	.tablet-banner {display:block;}
+}
+
+</style>
+
+<script>
+var tag = document.createElement('script');
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	
+var videoID = '6ayIq2J_uFs',
+	player,
+	tabletOrMobile = (document.documentElement.clientWidth >= 768) ? "Tablet" : "Touch",
+	isPlaying = false;
+
+function onPlayerReady(event) {
+
+player.setPlaybackQuality('hd720')
+/*player.start();*/
+}
+function onPlayerStateChange(event) {
+	if (event.data == YT.PlayerState.PLAYING) {
+		playingCounter = 1;
+		if (!isPlaying) {
+			//player.setPlaybackQuality('hd720')
+			fireTag('27.22',{'<model_year>':'2014','<device_type>': tabletOrMobile,'<device>': tabletOrMobile,'<current_pagename>':'TMob:Tablet:Highlander:Home' ,'<model_name>': "Highlander", '<video_title>': "Big Game starring Muppets | 2014 Toyota Highlander"});
+		}
+
+		isPlaying = true;
+	}
+
+	if (event.data == YT.PlayerState.ENDED) {
+
+		fireTag('27.23',{'<model_year>':'2014','<device_type>': tabletOrMobile,'<device>': tabletOrMobile,'<current_pagename>':'TMob:Tablet:Highlander:Home' ,'<model_name>': "Highlander", '<video_title>': "Big Game starring Muppets | 2014 Toyota Highlander"});
+		/*player.destroy();*/
+
+		isPlaying = false;
+		$(".yt-wrapper").removeClass('active');
+		$(".superbowl-banner").show();
+	}
+
+	if (event.data == YT.PlayerState.PAUSED) {
+		//alert('track paused');
+		//isPaused = true;
+	}
+}
+
+
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player('player', {
+		height: '390',
+		width: '640',
+		videoId: videoID,
+		events: {
+			'onReady': onPlayerReady,
+			'onStateChange': onPlayerStateChange
+		},
+		playerVars: {rel: 0, controls: 1, showinfo: 0, quality: 'hd720'}
+	});
+}
+
+
+function whenScriptReady() {
+	if(typeof($) == 'function') {
+		// defer until fireTag exists
+		/*function fireOnloadTag() {
+			if(typeof(fireTag) == 'function') {
+				fireTag('189.5',{'<device_type>': tabletOrMobile, '<device>': tabletOrMobile, '<model_year>':2014, '<model_trim>':'LE', '<model_name>' : 'Highlander'});
+			} else {
+				setTimeout(fireOnloadTag,500);
+			}
+		}
+
+		fireOnloadTag();*/
+
+		$(".superbowl-banner").click(function() {
+			if (!window.location.href.match("/espanol/")) {
+				$(".yt-wrapper").addClass('active');
+
+				var tablet_player;
+
+				$(".sectionTitle").bind('click', function(e) {
+					var $this = $(this);
+					$this.next('ul').toggleClass('open');
+					$this.children().children().toggleClass('arrowOpened');
+				});
+
+				$(".superbowl-banner").hide();
+			}
+		});
+
+
+
+	} else {
+		setTimeout(whenScriptReady,300);
+	}
+}
+
+whenScriptReady();
+
+
+</script>

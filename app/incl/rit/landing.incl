@@ -1,0 +1,4 @@
+<div id="landing" class="container span15">
+	<div id="landing-error" class="errors clearfix"></div>
+	<div id="car-items" class="clearfix"></div>
+</div>

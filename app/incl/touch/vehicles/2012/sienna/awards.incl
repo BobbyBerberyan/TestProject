@@ -1,0 +1,69 @@
+
+<aside>
+  <ul id="globalAside" class="clearfix">
+    <li id="byt"><a href="/configurator/" data-firetag="38.2"><div><span>Build Your Toyota</span><div class="bg" id="bytLogo"></div></div></a></li>
+    <li id="tcuv"><a href="http://www.toyota.com/tcuv/" data-firetag="38.3"><div><span>Certified Used Vehicles</span><div class="bg" id="tcuvLogo"></div></div></a></li>
+    <li id="tfs"><a href="http://www.toyotafinancial.com/" data-firetag="38.4"><div><span>Toyota Financial Services</span><div class="bg" id="tfsLogo"></div></div></a></li>
+	<li id="entune"><a href="/entune/" data-firetag="38.12"><div><span>Entune</span><div class="bg" id="entLogo"></div></div></a></li>
+  </ul>
+</aside>
+<footer>
+  <div id="disclaimerContain">
+    <div id="disclaimerTitle"><span id="arrowDisc">&#x25B6;</span> [#] View All Disclosures</div>
+    <ul id="disclaimerList">
+
+	<li>[1] - Based on Q4 2011 shopping data on Kelley Blue Book's kbb.com. For more information, visit www.kbb.com.</li>
+
+	<li>[2] - Insurance Institute for Highway Safety rating for 2012 Sienna, vehicle class Minivans. For more details on 2012 Top Safety Pick Awards, see www.iihs.org</li>
+
+	<li>[3] - Based on manufacturers' data.</li>
+
+	<li>[4] - The Toyota Sienna received the lowest number of problems per 100 vehicles among minivans in the proprietary J.D. Power and Associates 2012 Vehicle Dependability StudySM. Study based on 31,325 consumer responses measuring problems consumers experienced in the past 12 months with three-year-old vehicles (2009 model year cars and trucks). Proprietary study results are based on experiences and perceptions of consumers surveyed October-December 2011. Your experiences may vary. Visit jdpower.com</li>
+
+	<li>[5] - 2012 IntelliChoice, www.IntelliChoice.com; Minivan. Based on 2012 model year study.</li>
+
+	<li>[6] - 2012 IntelliChoice, www.IntelliChoice.com; Minivan, 4-cyl. models only. Based on 2012 model year study.</li>
+
+	<li>[7] - The Toyota Sienna received the lowest number of problems per 100 vehicles among minivans in the proprietary J.D. Power and Associates 2011-2012 Vehicle Dependability StudiesSM. 2012 study based on 31,325 consumer responses measuring problems consumers experienced in the past 12 months with three year-old vehicles (2009 model year cars and trucks). Proprietary study results are based on experiences and perceptions of consumers surveyed October-December 2011. Your experiences may vary. Visit jdpower.com</li>
+
+	<li>[8] - 2012 IntelliChoice, www.IntelliChoice.com; Minivan, V6 models only. Based on 2012 model year study.</li>
+
+	<li>[9] - 2012 IntelliChoice, www.IntelliChoice.com; based on 2012 model year study.</li>
+
+	<li>[10] - MotorIntelligence.com, CY 2011 sales.</li>
+
+	<li>[11] - 2011 American Customer Satisfaction Index (ACSI) founded at the University of Michigan’s Ross School of Business. theacsi.org</li>
+
+	<li>[12] - 2012 IntelliChoice, www.IntelliChoice.com; Popular Brand. Based on 2012 model year study.</li>
+
+	<li>[13] - 2012 IntelliChoice, www.IntelliChoice.com; Popular Brand.</li>
+
+	<li>[14] - Based on Polk U.S. Vehicles In Operation registration statistics MY 1991-2011 as of July 2011.</li>
+
+	<li>[15] - Based on NHTSA Final Industry MY10 CAFE data for Toyota Motor Sales.</li>
+
+	<li>[16] - Durability based on longevity. Longevity based on Polk U.S. Vehicles In Operation registration statistics MY 1987-2011 as of July 2011. Full-line manufacturer based on car, SUV, minivan, compact and full-size pickup.</li>
+
+</ul>
+  </div>
+  <ul id="internalLinks">
+    <li><a href="/espanol/" data-firetag="38.5">Espa&ntilde;ol</a></li>
+    <li><a href="#" data-firetag="38.6">View Full Site</a></li>
+  </ul>
+  <ul id="socialLinks">
+    <li data-href="http://www.facebook.com/toyota" data-firetag="38.7"><a class="bg" href="#"></a></li>
+    <li data-href="http://www.twitter.com/toyota" data-firetag="38.8"><a class="bg" href="#"></a></li>
+    <li data-href="http://www.youtube.com/toyotausa" data-firetag="38.9"><a class="bg"></a></li>
+  </ul>  
+  <ul id="coda">
+    <li><a href="receive-updates.html" data-firetag="38.10">Receive Updates</a></li>
+    <li><a href="/help/" data-firetag="38.11">Help &amp; Support</a></li>
+    <li><a href="/entune/" data-firetag="38.12">Entune</a></li>
+    <li><a href="/help/legal.html" data-firetag="38.13">Legal</a></li>
+	<li><a href="/help/privacy.html" data-firetag="38.13">Your Privacy Rights</a></li>
+  </ul>
+  <p id="copyrightCopy">&copy;2012 Toyota Motor Sales, U.S.A., Inc. All information applies to U.S. vehicles only.</p>
+</footer>
+
+<!--#include virtual="/incl/velti.incl" -->
+

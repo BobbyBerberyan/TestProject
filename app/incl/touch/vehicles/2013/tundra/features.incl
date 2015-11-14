@@ -1,0 +1,79 @@
+
+<aside>
+  <ul id="globalAside" class="clearfix">
+    <li id="byt"><a href="/configurator/" data-firetag="38.2"><div><span>Build Your Toyota</span><div class="bg" id="bytLogo"></div></div></a></li>
+    <li id="tcuv"><a href="http://www.toyota.com/tcuv/" data-firetag="38.3"><div><span>Certified Used Vehicles</span><div class="bg" id="tcuvLogo"></div></div></a></li>
+    <li id="tfs"><a href="http://www.toyotafinancial.com/" data-firetag="38.4"><div><span>Toyota Financial Services</span><div class="bg" id="tfsLogo"></div></div></a></li>
+	<li id="entune"><a href="/entune/" data-firetag="38.12"><div><span>Entune</span><div class="bg" id="entLogo"></div></div></a></li>
+  </ul>
+</aside>
+<footer>
+  <div id="disclaimerContain">
+    <div id="disclaimerTitle"><span id="arrowDisc">&#x25B6;</span> [#] View All Disclosures</div>
+    <ul id="disclaimerList">
+
+	<li>[1] - XM services require a subscription after trial period, and are sold separately or as a package. Subscriptions governed by SiriusXM Customer Agreement; see www.siriusxm.com. <u>If you decide to continue your XM service at the end of your complimentary trial, the plan you choose will automatically renew and bill at then-current rates until you call 1-866-635-2349 to cancel.</u> Fees and programming subject to change. Available only to those at least 18 years of age in the 48 contiguous United States and D.C.</li>
+
+	<li>[2] - May not be compatible with all mobile phones, MP3/WMA players and like models.</li>
+
+	<li>[3] - iPod<sup>&#174;</sup> is a registered trademark of Apple Inc. All rights reserved.</li>
+
+	<li>[4] - The <i>Bluetooth</i><sup>&#174;</sup> word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by Toyota is under license. Other trademarks and trade names are those of their respective owners. Performance of <i>Bluetooth</i><sup>&#174;</sup> wireless technology compatible phones will vary based on phone software version, coverage and your wireless carrier. Toyota does not endorse a particular phone or substantiate the <i>Bluetooth</i><sup>&#174;</sup> wireless technology audio streaming capability of cell phones. See toyota.com for more details.</li>
+
+	<li>[5] - Availability and accuracy of the information provided by the navigation system or any XM services mentioned (if installed) are dependent upon many factors. Use common sense when relying on information provided. Services not available in every city or roadway. Periodic navigation updates available at additional cost. See your <i>Navigation System Owner's Manual</i> or contact XM for details. </li>
+
+	<li>[6] - Be sure to obey traffic regulations and maintain awareness of road and traffic conditions. Select Entune<sup>&reg;</sup> apps use a large amount of data and you are responsible for all data charges. Apps and services vary by phone and carrier. Not all apps and data services are available initially. Apps identified by "TM" or "&reg;" are trademarks or registered trademarks of their respective companies and cannot be used without permission. See toyota.com/entune for the latest information regarding apps and services. </li>
+
+	<li>[7] - The backup camera does not provide a comprehensive view of the rear area of the vehicle. You should also look around outside your vehicle and use your mirrors to confirm rearward clearance. Cold weather will limit effectiveness and view may become cloudy.</li>
+
+	<li>[8] - HD Radio<sup>&trade;</sup> Technology manufactured under license from iBiquity Digital Corporation U.S. and Foreign Patents. HD Radio<sup>&trade;</sup> and the HD, HD Radio, and “Arc” logos are proprietary trademarks of iBiquity Digital Corp.</li>
+
+	<li>[9] - iTunes<sup>&reg;</sup> Tagging is a registered trademark of Apple Inc. All rights reserved. </li>
+
+	<li>[10] - Headphones are for passenger use only. Do not use while operating vehicle.</li>
+
+	<li>[11] - The <i>Bluetooth</i><sup>&reg;</sup> word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by Toyota is under license. Other trademarks and trade names are those of their respective owners. The phones on toyota.com have been tested for <i>Bluetooth</i><sup>&reg;</sup> wireless technology compatibility with Toyota vehicles. Performance will vary based on phone software version, coverage and your wireless carrier. Phones are warranted by their manufacturer, not Toyota.</li>
+
+	<li>[12] - HomeLink<sup>&#174;</sup> is a registered trademark of Johnson Controls, Inc.</li>
+
+	<li>[13] - Vehicle Stability Control (VSC) is an electronic system designed to help the driver maintain vehicle control under adverse conditions. It is not a substitute for safe driving practices. Factors including speed, road conditions and driver steering input can all affect whether VSC will be effective in preventing a loss of control. Please see your <i>Owner's Manual</i> for further details.</li>
+
+	<li>[14] - Brake Assist is designed to help the driver take full advantage of the benefits of ABS. It is not a substitute for safe driving practices. Braking effectiveness also depends on proper brake-system maintenance and tire and road conditions.</li>
+
+	<li>[15] - Smart Stop Technology operates only in the event of certain simultaneous brake and gas pedal applications. When engaged, the system will reduce engine power to help the brakes bring the vehicle to a stop. Factors including speed, road conditions and driver input can all impact stopping distance. Smart Stop Technology is not a substitute for safe and attentive driving and does not guarantee instant stopping. Please see your <i>Owner's Manual</i> for further details.</li>
+
+	<li>[16] - All the airbag (AB) systems are Supplemental Restraint Systems. All ABs (if installed) are designed to inflate only under certain conditions and in certain types of severe collisions: frontal and knee ABs typically inflate in frontal collisions; side and side curtain ABs in side collisions; Roll-Sensing Curtain ABs at a severe tilt degree, roll or lateral G-force. In all other accidents, the ABs will not inflate. To decrease the risk of injury from an inflating AB, always wear seatbelts, sit upright in the middle of the seat as far back as possible and do not lean against the door. Do not put objects in front of an AB or around the seatback. Do not use a rearward-facing child seat in any front passenger seat. The force of an inflating AB may cause serious injury or death. See your <i>Owner's Manual</i> for further information/warnings.</li>
+
+	<li>[17] - The Toyota Tire Pressure Monitor alerts the driver when tire pressure is critically low. For optimal tire wear and performance, tire pressure should be checked regularly with a gauge; do not rely solely on the monitor system. See your <i>Owner's Manual</i> for details.</li>
+
+	<li>[18] - Trailer-Sway Control (TSC) is an electronic system designed to help the driver maintain vehicle control under adverse conditions. It is not a substitute for safe driving practices. Factors including speed, road conditions and driver steering input can all affect whether TSC will be effective in preventing a loss of control. Please see your <i>Owner’s Manual</i> for further details.</li>
+
+	<li>[19] - The engine immobilizer is a state-of-the-art anti-theft system. When you insert your key into the ignition switch or bring a Smart Key fob into the vehicle, the key transmits an electronic code to the vehicle.  The engine will only start if the code in the transponder chip inside the key or Smart Key fob matches the code in the vehicle’s immobilizer.  Because the transponder chip is embedded in the key or Smart Key fob, it can be costly to replace.  If you lose a key or Smart Key fob, your Toyota dealer can help. Alternatively, you can find a qualified independent locksmith to perform high-security key services by consulting your local Yellow Pages or by contacting www.aloa.org.</li>
+
+	<li>[20] - Manufacturer's Suggested Retail Price, excludes the Delivery, Processing and Handling Fee of $760 for Cars, $810 for Small/Medium Trucks (Sienna, RAV4, Highlander Gas, Highlander HV, FJ Cruiser, 4Runner, Tacoma, Land Cruiser and Venza), and $985 for Large Trucks (Tundra and Sequoia). (Historically, vehicle manufacturers and distributors have charged a separate fee for processing, handling and delivering vehicles to dealerships. Toyota's charge for these services is called the "Delivery, Processing and Handling Fee" and is based on the value of the processing, handling and delivery services Toyota provides as well as Toyota's overall pricing structure. Toyota may make a profit on the Delivery, Processing and Handling Fee.) Excludes taxes, license, title and available or regionally required equipment. The Delivery, Processing and Handling Fee in AL, AR, FL, GA, LA, MS, NC, OK, SC and TX will be higher. Actual dealer price will vary.</li>
+
+	<li>[21] - Covers normal factory scheduled service. Plan is 2 years or 25K miles, whichever comes first. The new Toyota vehicle cannot be part of a rental or commercial fleet, or a livery or taxi vehicle. See plan for complete coverage details. See participating Toyota dealer for details. Valid only in the continental United States and Alaska.</li>
+
+</ul>
+  </div>
+  <ul id="internalLinks">
+    <li><a href="/espanol/" data-firetag="38.5">Espa&ntilde;ol</a></li>
+    <li><a href="#" data-firetag="38.6">View Full Site</a></li>
+  </ul>
+  <ul id="socialLinks">
+    <li data-href="http://www.facebook.com/toyota" data-firetag="38.7"><a class="bg" href="#"></a></li>
+    <li data-href="http://www.twitter.com/toyota" data-firetag="38.8"><a class="bg" href="#"></a></li>
+    <li data-href="http://www.youtube.com/toyotausa" data-firetag="38.9"><a class="bg"></a></li>
+  </ul>  
+  <ul id="coda">
+    <li><a href="receive-updates.html" data-firetag="38.10">Receive Updates</a></li>
+    <li><a href="/help/" data-firetag="38.11">Help &amp; Support</a></li>
+    <li><a href="/entune/" data-firetag="38.12">Entune</a></li>
+    <li><a href="/help/legal.html" data-firetag="38.13">Legal</a></li>
+	<li><a href="/help/privacy.html" data-firetag="38.13">Your Privacy Rights</a></li>
+  </ul>
+  <p id="copyrightCopy">&copy;2013 Toyota Motor Sales, U.S.A., Inc. All information applies to U.S. vehicles only.</p>
+</footer>
+  
+  <!--#include virtual="/incl/velti.incl" -->
+  

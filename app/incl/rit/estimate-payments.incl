@@ -1,0 +1,267 @@
+<!-- budget -->
+<section id="paymentsBox" class="paymentsBox ftBox bgContainer">
+	<div class="container">
+        <div class="top clearfix">
+            <img class="icon" src="/apps/financial-tools/img/payments.png">
+            <div class="heading">
+                <h3>Estimate <br /> Monthly Payments<sup><a href="#8" data-disclaimer="8">8</a></sup></h3>
+                <p id="descTxt">Decide for yourself how many dollars make sense.<sup><a href="#9" data-disclaimer="9">9</a></sup></p>
+            </div>
+        </div>
+        <div class="bottom clearfix">
+            <span class="box-top"></span>
+            <span class="box-bottom"></span>
+            <div class="cols pull-left">
+                <div class="disabledBlocker1 disabledBlocker"></div>
+                <div class="col col1">
+					<div class="info configurator-info">
+	                    <h4 class="modelName"></h4>
+	                    <h5><span class="msrp"></span><span> msrp*</span></h5>
+	                    <p class="details"></p>
+	                    <a class="apply-credit btn btn-circle tiny" target="_" href="/financial-tools/#!/redirect/apply">
+	                        <i class="icon-arrow-right-tiny"></i>
+	                        <span>Apply for Credit</span>
+	                    </a>
+	                    <a data-flyout-form="REQUEST_QUOTE_CONFIGURED" data-model-code="corolla" class="request-quote btn btn-circle tiny" href="#">
+	                        <i class="icon-arrow-right-tiny"></i>
+	                        <span>Request a Quote</span>
+	                    </a>
+	                </div>
+                    <div class="zipcode-container configurator-zipcode">
+                    </div>
+                </div>
+                <div class="col col2">
+                    <h4>Finance Options</h4>
+                    <a class="btn btn-rectangle financeOption active" data-slug="buy">Buy</a>
+                    <a class="btn btn-rectangle financeOption" data-slug="lease">Lease</a>
+                </div>
+                <div class="col col3 btn-rectangle-drop credit-drop">
+                    <h4>Credit Rating</h4>
+                    <a class="btn btn-circle smaller arrow" href="#">
+                        <i class="icon-arrow-down"></i>
+                    </a>
+                    <div class="btn-drop drop">
+                        <div class="options">
+                            <span class="bg-top"></span>
+                            <span class="bg-bottom"></span>
+                            <a class="active btn btn-rectangle large" data-rating="0"><h4 class="title small">Excellent</h4></a>
+                            <a class="btn btn-rectangle large" data-rating="1"><h4 class="title small">Great</h4></a>
+                            <a class="btn btn-rectangle large" data-rating="2"><h4 class="title small">Very Good</h4></a>
+                            <a class="btn btn-rectangle large" data-rating="3"><h4 class="title small">Good</h4></a>
+                            <a class="btn btn-rectangle large" data-rating="4"><h4 class="title small">Fair</h4></a>
+                            <a class="btn btn-rectangle large" data-rating="5"><h4 class="title small">Poor</h4></a>
+                            <a class="btn btn-rectangle large" data-rating="6"><h4 class="title small">Very Poor</h4></a>
+                            <a class="btn btn-rectangle large" data-rating="7"><h4 class="title small">Extremely Poor</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col4 apr-drop">
+                    <h4>Estimated APR</h4>
+                    <span class="apr" id="paymentsAPR"></span>
+                </div>
+                <div class="col col4 btn-rectangle-drop mileage-drop hidden">
+                    <h4>Annual Mileage</h4>
+                    <a class="btn btn-circle smaller arrow" href="#">
+                        <i class="icon-arrow-down"></i>
+                    </a>
+                    <div class="btn-drop drop">
+                        <div class="options">
+                            <span class="bg-top"></span>
+                            <span class="bg-bottom"></span>
+                            <a class="btn btn-rectangle large" data-mileage="12000"><h4 class="title small">12,000</h4></a>
+                            <a class="btn btn-rectangle large" data-mileage="15000"><h4 class="title small">15,000</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col5 btn-rectangle-drop months-drop">
+                    <!--#include virtual="/apps/financial-tools/incl/term-length-select.html"-->
+                </div>
+                <div class="col col6 contributions">
+                    <h4>Your Contributions</h4>
+                    <div>
+                        <p>Down Payment</p>
+                        <input class="digits-dollar" pattern="[0-9]*" type="text" id="paymentsDown" value="$">
+                    </div>
+                    <div>
+                        <p>Trade-In Value</p>
+                        <input class="digits-dollar" pattern="[0-9]*" type="text" id="paymentsTradein" value="$">
+                        <a class="trade-in-calculate" href="#" data-flyout-form="BB_IFRAME">estimate it</a>
+                    </div>
+                </div>
+            </div>
+            <div class="calculate">
+                <a id="paymentsCalculate" href="#" class="btn btn-pill big">
+                    <i class="icon-calculate-big"></i>
+                    <span>Calculate</span>
+                </a>
+            </div>
+        </div>	
+        <div class="error-box" id="paymentError">
+            <p class="ajax-error error">Due to technical difficulties, the page you requested is not available. Please try again or check back later.</p>
+            <p class="calculate-error error">Sorry, there was an error trying to calculate your budget. Please check your values and try again.</p>
+            <p class="no-match-error error">There are currently no matches for the details provided. Please try again or check back later.</p>
+            <p class="region-error error">Sorry, Monthly Payment could not be calculated for this region.</p>
+        </div>
+        
+        <!-- Results -->
+        <div class="results">
+            <div class="box-bottom"></div>
+            <div class="summary">
+                <div class="image" id="paymentsJelly">
+                </div>
+                <div class="info">
+                    <h4><span>2012</span> Prius Plug-in Hybrid</h4>
+                    <h5>$ 34,305 <sup><a href="#1" data-disclaimer="1">1</a></sup></h5>
+                    <p>2.5-L 4 Cyl 6-Speed Automatic Transmission</p>
+                    <div class="summary-actions">
+                        <a class="apply-credit btn btn-circle tiny" target="_"  href="/financial-tools/#!/redirect/apply">
+                            <i class="icon-arrow-right-tiny"></i>
+                            <span>Apply for Credit</span>
+                        </a>
+                        <a data-flyout-form="REQUEST_QUOTE" data-model-code="camry" class="request-quote btn btn-circle tiny" href="#">
+                            <i class="icon-arrow-right-tiny"></i>
+                            <span>Request a Quote</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="creditPopoverHtml" class="hidden">
+                <div class="credit-popover">
+                    <a class="btn btn-gray small close" id="creditPopoverClose" href="#">
+                        <i class="icon-close-small"></i>
+                    </a>
+                    <h4>Credit Rating</h4>
+                    <p>The self-assessed credit range provided by you to estimate the APR for a financing or rent charge factor for a lease agreement. It is distinct form your Credit Report, which is generated by third-party credit bureaus.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Rating</td><td class="two">FICO Score</td><td>Description</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Excellent</td><td class="two">720 < </td><td>I have a long, established, positive credit history.</td>
+                            </tr>
+                            <tr>
+                                <td>Great</td><td class="two">690 - 719</td><td>I use my credit wisely and never miss a payment.</td>
+                            </tr>
+                            <tr>
+                                <td>Very Good</td><td class="two">670 - 689</td><td>I have a positive credit history with no recent late payments.</td>
+                            </tr>
+                            <tr>
+                                <td>Good</td><td class="two">650 - 669</td><td>I am responsible with my credit and usually make my payments on time.</td>
+                            </tr>
+                            <tr>
+                                <td>Fair</td><td class="two">630 - 649</td><td>I try to be responsible with my credit but have had some recent credit challenges.</td>
+                            </tr>
+                            <tr>
+                                <td>Poor</td><td class="two">610 - 629</td><td>I have a number of issues with my credit.</td>
+                            </tr>
+                            <tr>
+                                <td>Very Poor</td><td class="two">580 - 609</td><td>I have significant credit issues or have only recently established credit.</td>
+                            </tr>
+                            <tr>
+                                <td>Extremely Poor</td><td class="two"> > 579</td><td>I have an extremely poor credit history or I have no credit history at all.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <table class="details buy">
+                <thead>
+                    <tr>
+                        <td class="one"></td>
+                        <td class="two">Buy</td>
+                        <td class="three">Lease</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="credit">
+                        <td class="one">Credit Rating
+                            <a class="btn btn-circle tiny" id="creditPopover" href="#">
+                                <i class="icon-info-short"></i><span></span>
+                            </a></td>
+                        <td class="two"></td>
+                        <td class="three"></td>
+                    </tr>
+                    <tr class="months">
+                        <td class="one">Term Duration<sup><a href="#18" data-disclaimer="18">18</a></sup></td>
+                        <td class="two"></td>
+                        <td class="three"></td>
+                    </tr>
+                    <tr class="apr">
+                        <td class="one">Estimated APR<sup><a href="#19" data-disclaimer="19">19</a></sup> <sup><a href="#20" data-disclaimer="20">20</a></sup></td>
+                        <td class="two"></td>
+                        <td class="three"></td>
+                    </tr>
+                    <tr class="mileage">
+                        <td class="one">Mileage<sup><a href="#21" data-disclaimer="21">21</a></sup></td>
+                        <td class="two"></td>
+                        <td class="three"></td>
+                    </tr>
+                    <tr class="msrp">
+                        <td class="one">MSRP<sup><a href="#22" data-disclaimer="22">22</a></sup> <sup><a href="#23" data-disclaimer="23">23</a></sup> <sup><a href="#24" data-disclaimer="24">24</a></sup>/Gross Cap Cost<sup><a href="#25" data-disclaimer="25">25</a></sup></td>
+                        <td class="two"></td>
+                        <td class="three"></td>
+                    </tr>
+                    <tr class="downPayment">
+                        <td class="one">Down Payment<sup><a href="#32" data-disclaimer="32">32</a></sup>/Cap Cost Reduction<sup><a href="#26" data-disclaimer="26">26</a></sup></td>
+                        <td class="two"></td>
+                        <td class="three"></td>
+                    </tr>
+                    <tr class="tradeIn">
+                        <td class="one">Estimated Trade-In Value<sup><a href="#27" data-disclaimer="27">27</a></sup></td>
+                        <td class="two"></td>
+                        <td class="three"></td>
+                    </tr>
+                    <tr class="monthlyPayment">
+                        <td class="one">Estimate Monthly Payment<sup><a href="#28" data-disclaimer="28">28</a></sup></td>
+                        <td class="two"></td>
+                        <td class="three"></td>
+                    </tr>
+                    <tr class="due">
+                        <td class="one">Total Due At Signing<sup><a href="#29" data-disclaimer="29">29</a></sup></td>
+                        <td class="two"></td>
+                        <td class="three"></td>
+                    </tr>
+                    <tr class="securityDeposit">
+                        <td class="one">Refundable Security Deposit<sup><a href="#30" data-disclaimer="30">30</a></sup></td>
+                        <td class="two"></td>
+                        <td class="three"></td>
+                    </tr>
+                    <tr class="firstMonthlyPayment">
+                        <td class="one">First Monthly Payment</td>
+                        <td class="two"></td>
+                        <td class="three"></td>
+                    </tr>
+                    <tr class="acquisitionFee">
+                        <td class="one">Acquisition Fee<sup><a href="#31" data-disclaimer="31">31</a></sup></td>
+                        <td class="two"></td>
+                        <td class="three"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="local-specials" id="payments-local-specials">
+                <section class="panel-container offers-main-section active-section">
+                    <div class="container">
+                        <div class="page-content">
+                            <div class="panel-set">
+                            </div>
+                        </div>
+                        <div class="offers-nav">
+                            <div class="container">
+                                <a class="left-arrow offers-turn-prev pull-left" href="#" style="display: inline; ">
+                                    <i class="icon-arrow-left-big"></i>
+                                </a>
+                                <a class="right-arrow offers-turn-next pull-right" href="#" style="display: none; ">
+                                    <i class="icon-arrow-right-big"></i>
+                                </a>
+                            </div>
+                        </div>
+                   </div>
+                </section>
+            </div>
+            
+        </div> <!-- /results -->
+    </div>
+</section>
